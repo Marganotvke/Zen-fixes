@@ -1,0 +1,22 @@
+{
+  "id": "zen-fixes",
+  "homepage": "https://github.com/Marganotvke/Zen-fixes",
+  "author": "Marganotvke",
+  "name": "Zen Fixes",
+  "description": "Moves reload into the URL bar and adds Nebula-style audio tab icons that retreat to the corner on hover.",
+  "version": "1.0.0",
+  "createdAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "readme": "https://raw.githubusercontent.com/Marganotvke/Zen-fixes/main/README.md",
+  "style": {
+    "chrome": "chrome.css"
+  },
+  "scripts": {
+    "js/reload-urlbar.uc.js": {
+      "name": "Reload URL bar",
+      "description": "Moves reload into the URL bar and swaps extension controls to the top button row.",
+      "include": ["chrome://browser/content/browser.xhtml"]
+    }
+  },
+  "tags": ["chrome", "urlbar", "tabs", "audio"]
+}
