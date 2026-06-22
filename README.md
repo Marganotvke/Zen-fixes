@@ -7,33 +7,28 @@ Sine mod for [Zen Browser](https://zen-browser.app/) with two UI fixes:
 
 ## Requirements
 
-- Zen Browser with [Sine](https://github.com/CosmoCreeper/Sine) mods enabled
-- **Allow unsafe JS** enabled in Sine settings (needed for the reload URL bar script)
+- Zen Browser with [Sine](https://github.com/CosmoCreeper/Sine) installed
+- **Allow unsafe JS** enabled in Sine settings (required for the reload URL bar script)
 
-## Install via Sine
+## Install from remote URL (Sine)
 
-1. Open Zen → Settings → Sine → **Install custom mod**
-2. Paste: `https://github.com/Marganotvke/Zen-fixes`
-3. Click install, then **fully restart Zen**
+Sine downloads this mod directly from GitHub — no manual cloning or file copying.
 
-## Manual install
+1. Open **Zen → Settings → Sine**
+2. Open **Sine settings** (gear icon) and enable **Allow unsafe JS**
+3. In the **Install custom mod** field below the marketplace, paste one of:
+   - `https://github.com/Marganotvke/Zen-fixes`
+   - `Marganotvke/Zen-fixes`
+4. Click **Install**
+5. **Fully restart Zen** (or use *about:support → Clear startup cache*)
 
-1. Quit Zen.
-2. Clone into your profile's Sine mods folder:
-
-   ```bash
-   cd ~/Library/Application\ Support/zen/Profiles/<profile>/chrome/sine-mods
-   git clone https://github.com/Marganotvke/Zen-fixes.git zen-fixes
-   ```
-
-3. Enable **Allow unsafe JS** in Sine settings.
-4. Start Zen and enable **Zen Fixes** in the Sine mods list.
+Sine reads `theme.json` from the repo, downloads the files, and installs the mod into your profile automatically.
 
 ## Notes
 
 - The reload script re-applies when Zen reshuffles toolbar widgets (including extension overflow).
-- Audio overlay styling uses Zen's built-in tab sound icons; only layout and hover behavior are customized.
-- If you also use Nebula's sound icon module, disable it to avoid conflicting styles.
+- Audio overlay styling follows Nebula’s sound-icon behavior with hover-to-corner retreat.
+- If you also use Nebula’s sound icon module, disable it to avoid conflicting styles.
 
 ## License
 
