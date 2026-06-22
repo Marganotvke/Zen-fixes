@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Zen Fixes — Reload URL Bar
 // @description    Move reload into the URL bar and swap extension controls
-// @version        1.0
+// @version        1.1
 // @include        main
 // @grant          none
 // ==/UserScript==
@@ -187,14 +187,12 @@
         "resource:///modules/CustomizableUI.sys.mjs"
       );
 
-      for (const eventName of [
-        "widget-added",
-        "widget-removed",
-        "widget-moved",
-        "area-reset",
-      ]) {
-        CustomizableUI.addListener(eventName, scheduleApply);
-      }
+      CustomizableUI.addListener({
+        onWidgetAdded: scheduleApply,
+        onWidgetRemoved: scheduleApply,
+        onWidgetMoved: scheduleApply,
+        onAreaReset: scheduleApply,
+      });
     } catch (error) {
       console.warn("[Zen Fixes]: CustomizableUI listener unavailable", error);
     }

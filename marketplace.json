@@ -5,7 +5,7 @@
     "author": "Marganotvke",
     "name": "Zen Fixes",
     "description": "Moves reload into the URL bar and adds Nebula-style audio tab icons that retreat to the corner on hover.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "createdAt": "2026-06-22",
     "updatedAt": "2026-06-23",
     "readme": "https://raw.githubusercontent.com/Marganotvke/Zen-fixes/main/README.md",
