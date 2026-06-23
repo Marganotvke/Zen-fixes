@@ -41,6 +41,11 @@
   display: none !important;
 }
 
+/* Hide URL bar translation button; translation remains available elsewhere */
+#urlbar #translations-button {
+  display: none !important;
+}
+
 /* ============================================================
    Zen Fixes — Audio tab icon overlay (Nebula-style + hover retreat)
    ============================================================ */
