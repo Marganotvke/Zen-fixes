@@ -5,9 +5,9 @@
     "author": "Marganotvke",
     "name": "Zen Fixes",
     "description": "URL bar fixes, audio tab icons, and hides the translation button.",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "createdAt": "2026-06-22",
-    "updatedAt": "2026-06-23",
+    "updatedAt": "2026-06-22",
     "readme": "https://raw.githubusercontent.com/Marganotvke/Zen-fixes/main/README.md",
     "style": {
       "chrome": "chrome.css"
